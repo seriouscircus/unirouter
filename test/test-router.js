@@ -8,7 +8,7 @@ chai.use(sinonChai)
 const unilocSpy = sinon.spy()
 
 const router = proxyquire('../src/router', {
-  'uniloc': unilocSpy,
+  'uniloc-case-sensitive': unilocSpy,
 })
 
 describe('router', () => {

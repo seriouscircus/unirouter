@@ -1,4 +1,4 @@
-import uniloc from 'uniloc'
+import uniloc from 'uniloc-case-sensitive'
 
 let router = uniloc()
 

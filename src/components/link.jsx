@@ -11,7 +11,7 @@ export class Link extends React.Component {
     name: PropTypes.string.isRequired,
     navigate: PropTypes.func.isRequired,
     options: PropTypes.object,
-  }
+  };
 
   handleClick(event, url) {
     event.preventDefault()

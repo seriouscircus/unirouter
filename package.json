@@ -1,20 +1,26 @@
 {
-  "name": "unirouter",
-  "version": "3.0.0",
-  "description": "A minimal routing system built with uniloc and redux",
+  "name": "unirouter-case-sensitive",
+  "version": "3.0.1",
+  "description": "Fork of 'A minimal routing system built with uniloc and redux'",
   "main": "lib/index.js",
   "scripts": {
-    "test": "istanbul test _mocha -- --require babel-register test/**/*.{js,jsx}",
+    "test": "istanbul test node_modules/mocha/bin/_mocha -- --require babel-register test/**/*.{js,jsx}",
     "build": "babel src -s -d lib",
     "watch": "babel src -s -d lib -w",
-    "bundle": "babel-node node_modules/.bin/webpack --display-modules",
+    "bundle": "babel-node node_modules/webpack/bin/webpack --display-modules",
     "prepublish": "npm run build && npm run bundle"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bkonkle/unirouter.git"
+    "url": "git+https://github.com/seriouscircus/unirouter.git"
   },
   "author": "Brandon Konkle <brandon@konkle.us>",
+  "contributors": [
+    {
+      "name": "Harald Tobler",
+      "email": "harald.tobler@seriouscircus.com"
+    }
+  ],
   "license": "MIT",
   "keywords": [
     "uniloc",
@@ -30,7 +36,7 @@
   "dependencies": {
     "react-redux": "^4.0.0",
     "redux-actions": "^0.8.0",
-    "uniloc": "^0.2.0"
+    "uniloc-case-sensitive": "^0.2.0"
   },
   "devDependencies": {
     "babel-cli": "^6.2.0",
